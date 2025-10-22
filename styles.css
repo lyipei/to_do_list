@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Slackside+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slackside+One&family=DM+Serif+Display:ital@0;1&display=swap');
+
+
+body {
+    background: #f7f3ee;
+
+}
+.header {
+    font-family: "Slackside One", cursive;
+    border-radius: 8px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 30%;
+    align-items: center;
+}
+.title {
+    font-size: 50px;
+    padding: 0;
+}
+.date {
+    font-size: 30px;
+    padding: 0;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    background-color: #f7d2d5;
+    border-radius: 25px;
+    width: 350px;
+    height: auto;
+}
+.add-task {
+    margin: 20px, aut0;
+    text-align: center;
+}
+input, select, button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.grid {
+    padding:1rem 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    margin-top: 20px;
+    gap:30px;
+    font-family: "DM Serif Display", serif;
+    text-align: center;
+}
+
+.grid div {
+    border-radius: 10px;
+    padding: 10px;
+    width: 220px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.work {
+    background-color: #c0cee4;
+    
+}
+.study {
+    background-color: #ffefc8;
+}
+.personal {
+    background-color: #dae8d0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 8px 0;
+    border-radius: 6px;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    height:auto;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+}
+li span{
+    flex: 1;
+    text-align: left;
+    word-break: break-word;
+}
+ 
+
+
+.delete-btn {
+    margin-left: 5px;
+    background: none;
+    border: none;
+    color: #da7d85;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.complete-btn {
+    margin-right: 5px;
+    background: none;
+    border: none;
+    color: #8487b1;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+
