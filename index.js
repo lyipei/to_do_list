@@ -1,49 +1,57 @@
+
+// wait unit the entire HTML ddocument has been loaded
 document.addEventListener("DOMContentLoaded", () => {
+    //Get reference to elements from the HTML
     const addBtn = document.getElementById("addBtn");
     const taskInput = document.getElementById("taskInput");
     const categorySelect = document.getElementById("category");
+    //Display the current date at the top of page
     const today = new Date();
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     document.getElementById("currentDate").textContent = today.toLocaleDateString(undefined, options);
 
+    //When the "add" buton is clicked
     addBtn.addEventListener("click", () => {
+        //Get the task text and category
         const taskText = taskInput.value.trim();
         const category = categorySelect.value;
 
+
+        //Prevent adding an empty task
         if (taskText === "") {
             alert("Please enter a task!");
             return;
         }
 
-        // Create list item
+        //Create a <li> element for the task 
         const li = document.createElement("li");
         
-
+        //Create a span to display the task text
         const taskSpan = document.createElement("span");
         taskSpan.textContent = taskText;
     
 
-        // Create buttons
+        //Create a "complete" button
         const completeBtn = document.createElement("button");
         completeBtn.textContent = "☐";
         completeBtn.classList.add("complete-btn");
-
+        //Create a "delete" button
         const deleteBtn = document.createElement("button");
         deleteBtn.textContent = "✖";
         deleteBtn.classList.add("delete-btn");
 
-        // Button actions
+        //Button actions (when user clicks the "complete" button)
         completeBtn.addEventListener("click", () => {
-            if (completeBtn.textContent === "☐") {
-                completeBtn.textContent = "☑";
-                li.style.opacity = "0.5";
+            if (completeBtn.textContent === "☐") { 
+                completeBtn.textContent = "☑"; //Change symbol to checked box 
+                li.style.opacity = "0.5"; //Fade out completed task
             }
             else {
-                completeBtn.textContent = "☐";
-                li.style.opacity = "1";
+                completeBtn.textContent = "☐";//Revert to unchecked box
+                li.style.opacity = "1";//Restore normal visibility
             }
         });
-
+        // Remove the task when user click "delete" button
         deleteBtn.addEventListener("click", () => {
             li.remove();
         });

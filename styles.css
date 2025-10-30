@@ -96,7 +96,7 @@ li span{
 }
  
 
-
+/* Adjusted the color of delete button*/
 .delete-btn {
     margin-left: 5px;
     background: none;
@@ -105,7 +105,7 @@ li span{
     cursor: pointer;
     font-size: 15px;
 }
-
+/* Adjusted the color of complete button*/
 .complete-btn {
     margin-right: 5px;
     background: none;
