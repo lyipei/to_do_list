@@ -43,12 +43,16 @@ document.addEventListener("DOMContentLoaded", () => {
         //Button actions (when user clicks the "complete" button)
         completeBtn.addEventListener("click", () => {
             if (completeBtn.textContent === "☐") { 
-                completeBtn.textContent = "☑"; //Change symbol to checked box 
-                li.style.opacity = "0.5"; //Fade out completed task
+                //Change symbol to checked box
+                completeBtn.textContent = "☑"; 
+                //Fade out completed task
+                li.style.opacity = "0.5"; 
             }
             else {
-                completeBtn.textContent = "☐";//Revert to unchecked box
-                li.style.opacity = "1";//Restore normal visibility
+                //Revert to unchecked box
+                completeBtn.textContent = "☐";
+                //Restore normal visibility
+                li.style.opacity = "1";
             }
         });
         // Remove the task when user click "delete" button
