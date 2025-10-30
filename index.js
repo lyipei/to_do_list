@@ -1,5 +1,5 @@
 
-// wait unit the entire HTML ddocument has been loaded
+// wait unit the entire HTML document has been loaded
 document.addEventListener("DOMContentLoaded", () => {
     //Get reference to elements from the HTML
     const addBtn = document.getElementById("addBtn");
