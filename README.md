@@ -13,7 +13,7 @@ For this project, I used Visual tudio Code as my main development environment be
 # Useful Websites
 
 - [JavaScript Tutorial](https://www.w3schools.com/js/)
-- [JavaScript = Beginner to pro](https://www.youtube.com/watch?v=EerdGm-ehJQ)
+- [JavaScript - Beginner to pro](https://www.youtube.com/watch?v=EerdGm-ehJQ)
 
 # Future Work
 
