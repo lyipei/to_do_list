@@ -4,7 +4,7 @@ This project is a To-Do List Web Application designed to strengthen my understan
 
 The main purpose of this project is to gain hands-on experience with JavaScript event handling, dynamic element creation, and responsive front-end design. 
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/gO-4BGx43Xg)
 
 # Development Environment
 
